@@ -8,7 +8,7 @@ for char in word:
 max_count = max(count)  # 가장 많이 등장한 알파벳의 횟수를 구합니다.
 max_index = count.index(max_count)  # 가장 많이 등장한 알파벳의 인덱스를 구합니다.
 
-# 가장 많이 등장한 알파벳의 횟수가 1보다 크면서, 동일한 횟수를 가진 알파벳이 있는 경우 "?"를 출력합니다.
+# 가장 많이 등장한 알파벳의 횟수가 1보다 크면 즉 같은 알파벳이 2개 이상이면
 if count.count(max_count) > 1:
     print("?")
 else:
